@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #1C1678; 
+    --secondary-color: #8576FF;
+    --three-color:#7BC9FF;
+    --four-color:#A3FFD6;
+}
+
+header{
+    background: url("../img/1b7476c8-15d0-4a34-af0b-67e97d9972c6.jpg");
+    width: 100%;
+    position: relative;
+    height: 100vh;
+
+
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+}
+
+#hero .navbar{
+
+    font-size: 30px;
+}
+.nav-item a{
+    color: #FFF;
+    margin: 0 20px 0 10px ;
+}
+
+.contenido-hero h2{
+    font-size: 90px;
+    color: #7BC9FF;
+    margin-top: 400px;
+}
+.contenido-hero h1{
+    font-size: 70px;
+    color: #FFF;
+}
+
+.icon-hero img{
+    border-radius: 50% 50%;
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
+}
+
+/* ------------------------------------------------------------- */
+
+#sobre-mi{
+    width: 100%;
+    height: 50vh;
+}
+
+#sobre-mi article{
+    padding: 100px 50px;
+    background-color: #8676ff4b;
+}
+#sobre-mi p{
+    font-size: 30px;
+    text-align: center;
+}
+#sobre-mi button{
+    font-size: 30px;
+    border-radius: 20px;
+    background: #1C1678;
+}
+#sobre-mi button a{
+    color: #FFF;
+    padding: 30px;
+}
+.info-about{
+    font-size: 50px;
+    text-align: center;
+}
+.info-about h2{
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
