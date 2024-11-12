@@ -97,12 +97,18 @@ header{
 
 #habilidades{
     width: 100%;
-    height: 90vh;
+    height: 50vh;
 }
+#habilidades .container{
+    background: #8676ff6b;
+    padding: 50px;
+}
+
 #habilidades h2{
     font-size: 50px;
     text-align: center;
     color: var(--primary-color);
+    margin: 50px 0 50px 0;
     
 }
 #habilidades h2::after {
@@ -113,41 +119,28 @@ header{
     background-color: var(--secondary-color);
     margin: 5px auto 20px;
 }
-#habilidades .container{
-    background: var(--secondary-color);
-    padding: 250px ;
-    display: flex;
-    flex-direction: column;
+
+#habilidades img{
+    width: 24px;
+    height: 24px;
+
+}
+#habilidades img{
+    width: 24px;
+    height: 24px;
+
 }
 
 #habilidades .hab{
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Espacio entre el SVG y el párrafo */
-
-}
-#habilidades img{
-    width: 24px;
-    height: 24px;
-
-}
-#habilidades img{
-    width: 24px;
-    height: 24px;
-
-}
-
-#habilidades .row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 80px 60px; /* Más espacio entre las habilidades */
-    justify-items: center; /* Centra cada elemento de habilidad */
+    justify-content: center;
+    padding: 50px 0 50px 100px;
 }
 /* -------------------------------------------------------------- */
 
 #portafolio{
     width: 100%;
     height: 100vh;
+    display: flex;
 }
 #portafolio img{
     width: 380px;
@@ -157,6 +150,7 @@ header{
     font-size: 50px;
     text-align: center;
     color: var(--primary-color);
+    margin: 50px 0 50px 0;
 }
 #portafolio h2::after {
     content: "";
@@ -166,4 +160,92 @@ header{
     background-color: var(--secondary-color);
     margin: 5px auto 20px;
 }
-#postafolio {}
+#portafolio .tarjeta-cuerpo {
+    margin-bottom: 70px;
+
+}
+
+/* --------------------------------------------------------------------------- */
+
+#estudios{
+    width: 100%;
+    height: 80vh;
+}
+#estudios .python{
+    margin-top: 100px;
+}
+#estudios h2{
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 50px 0 50px 0;
+}
+#estudios  h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 5px auto 20px;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+#experiencia h2{
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-color);
+}
+#experiencia  h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 5px auto 20px;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+#pasatiempos h2{
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 50px 0 50px 0;
+}
+#pasatiempos  h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 5px auto 20px;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+#contacto h2{
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 50px 0 50px 0;
+}
+#contacto  h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 5px auto 20px;
+}
+
+#contacto .formulario{
+    width: 50%;
+    padding: 0 50px 0 50px;
+
+}
+#contacto img{
+    width: 636px;
+    height: 500px;
+
+}
+
