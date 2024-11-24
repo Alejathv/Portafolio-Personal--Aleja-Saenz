@@ -119,7 +119,7 @@ header {
 /* Sección Habilidades */
 #habilidades {
     width: 100%;
-    height: 75vh;
+    height: 65vh;
 }
 
 #habilidades .container {
@@ -165,78 +165,101 @@ header {
 }
 
 /* -------------------------------------------------------------- */
+/* General */
 #portafolio {
-    width: 100%;
-    height: 100vh;
-}
-
-#portafolio .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#portafolio .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#portafolio img {
-    width: 380px;
-    height: 300px;
+    padding: 40px 0;
 }
 
 #portafolio h2 {
     font-size: 60px;
     text-align: center;
     color: var(--primary-color);
-    margin: 50px 0 50px 0;
-    width: 100%;
+    margin: 0px 0 40px 0;
 }
 
 #portafolio h2::after {
     content: "";
     display: block;
-    width: 200px;
+    width: 250px;
     height: 3px;
     background-color: var(--secondary-color);
     margin: 5px auto 20px;
 }
 
-.proyectos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; /* Espacio entre tarjetas */
-}
-
-.tarjeta-cuerpo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Filtros */
+.filtros {
     text-align: center;
-    margin: 15px;
-    padding: 15px;
-    /* Opcional: agregar un borde o sombra para mejor visualización */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
+.filtro {
+    padding: 10px 25px;
+    margin: 0 5px;
+    border: none;
+    background-color:#8676ffc7;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.filtro:hover {
+    background-color: #3700b3;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+/* Tarjetas */
+.tarjeta-cuerpo {
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #7bc8ff15;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-cuerpo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #1d16789a;
+}
+
+/* Imágenes */
+.tarjeta-cuerpo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.tarjeta-cuerpo img:hover {
+    opacity: 0.8;
+}
+
+/* Títulos y texto */
 .tarjeta-titulo {
-    margin: 15px 0 10px 0;
+    font-size: 30px;
+    margin: 10px 0 5px;
+    color: #1C1678;
 }
 
 .tarjeta-texto {
-    margin: 0;
+    font-size: 25px;
+    color: #555;
 }
+
 
 /* --------------------------------------------------------------------------- */
 
 #estudios{
     width: 100%;
     height: 70vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0.733)), 
+                url('../img/fondo-estudios.jpg');
+    background-size: cover;
 
 }
 #estudios h2{
@@ -254,7 +277,6 @@ header {
     margin: 5px auto 20px;
 }
 .imagenest img{
-    position: absolute;
     left: 800px;
 }
 #estudios p{
@@ -268,7 +290,7 @@ header {
     left: 1150px;
 }
 .estpython{
-    position: absolute;
+    /* position: absolute; */
     top: 240px;
     left: 390px;
 }
@@ -301,11 +323,12 @@ header {
     font-size: 30px;
     text-align: left;
 }
-.icon-experiencia i{
-    font-size: 400px;
+.icon-experiencia img{
+    width: 600px;
+    height: 600px;
     position: absolute;
-    color: var(--three-color);
-    right: 350px;
+    right: 300px;
+    top: -8px;
 }
 
 
@@ -334,7 +357,7 @@ header {
     text-align: right;
 }
 .imagen-pasatiempo img{
-    width: 400px;
+    width: 600px;
     height: 400px;
     position: absolute;
 }
@@ -344,7 +367,7 @@ header {
 footer{
     width: 100%;
     height: 30vh;
-    background-color: #7BC9FF;
+    background-color:var(--primary-color);
 }
 .contacto{
     position: relative;
@@ -408,6 +431,7 @@ footer{
 .footer-bottom p {
     margin: 10px 0 10px;
     font-size: 25px;
+    color: #7BC9FF;
 }
   
   /* Enlaces sociales */
@@ -419,7 +443,7 @@ footer{
   
 .redes-sociales a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--three-color);
     font-size: 24px;
     transition: color 0.3s ease-in-out;
 }
@@ -429,17 +453,173 @@ footer{
 }
 .redes-sociales i{
     font-size: 50px;
+
 }
 
-.contacto::before {
-    content: "\f109"; /* Código del icono FontAwesome (ejemplo: ícono de hogar) */
-    font-family: 'FontAwesome'; /* Asegúrate de haber cargado FontAwesome */
-    font-size: 40px;
-    color: #333;
-    position: absolute;
-    top: 50px;
-    left: 15%;
-    transform:rotate(-45deg);
-    z-index: 10;
-  }
 
+/* Media Queries para dispositivos móviles */
+@media (min-width: 320px) and (max-width:767px) {
+    /* Hero Section */
+    .contenido-hero h2 {
+        font-size: 50px;
+        margin-top: 150px;
+        position: relative;
+        left: 20px;
+    }
+
+    .contenido-hero h1 {
+        font-size: 30px;
+        position: relative;
+        top: 250px;
+        left: 20px;
+    }
+
+    .icon-hero img {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+        position: relative;
+        right: auto;
+    }
+
+    /* Sobre Mi */
+    #sobre-mi {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #sobre-mi p {
+        font-size: 25px;
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    /* Habilidades */
+    #habilidades {
+        height: auto;
+    }
+
+    #habilidades p {
+        font-size: 25px;
+    }
+
+    .hab {
+        padding: 20px;
+    }
+
+    /* Estudios */
+    #estudios {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .est {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .estpython {
+        text-align: center;
+    }
+
+    .est2021 {
+        margin-bottom: 50px;
+    }
+
+    /* Experiencia */
+    #experiencia {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .icon-experiencia img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        position: relative;
+        right: auto;
+        top: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    /* Pasatiempos */
+    #pasatiempos {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .imagen-pasatiempo img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        position: relative;
+        margin: 20px auto;
+        display: block;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-top h2 {
+        font-size: 30px;
+    }
+
+    .footer-top p {
+        font-size: 25px;
+    }
+}
+
+/* Media Queries para tablets */
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .contenido-hero h2 {
+        font-size: 70px;
+        left: 100px;
+    }
+
+    .contenido-hero h1 {
+        font-size: 35px;
+        left: 120px;
+    }
+
+    .icon-hero img {
+        width: 400px;
+        height: 400px;
+        right: 150px;
+    }
+
+    #sobre-mi p {
+        font-size: 30px;
+    }
+
+    .icon-experiencia img {
+        width: 500px;
+        height: 500px;
+        right: 150px;
+    }
+
+    .imagen-pasatiempo img {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .icon-hero img {
+        width: 450px;
+        height: 450px;
+        right: 200px;
+    }
+
+    .icon-experiencia img {
+        width: 550px;
+        height: 550px;
+        right: 200px;
+    }
+}

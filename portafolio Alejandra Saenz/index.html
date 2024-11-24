@@ -116,41 +116,60 @@
             <div class="container">
                 <div class="row">
                     <h2>Portafolio</h2>
-
+        
+                    <!-- Filtros -->
+                    <div class="filtros">
+                        <button class="filtro" data-categoria="todos">Todos</button>
+                        <button class="filtro" data-categoria="movil">Móviles</button>
+                        <button class="filtro" data-categoria="web">Desarrollo Web</button>
+                    </div>
+        
+                    <!-- Proyectos -->
                     <div class="col-lg-6 proyectos">
-                        <div class="tarjeta-cuerpo">
-                            <img src="img/proyecto1.jpg" alt="">
-                            <h5 class="tarjeta-titulo">Proyecto 1</h5>
-                            <p class="tarjeta-texto">Descripción del proyecto 1.</p>
+                        <div class="tarjeta-cuerpo movil">
+                            <a href="https://alejathv.github.io/Algoritmos-JS/">
+                                <img src="img/proyecto-movil-1.jpg" alt="Proyecto Móvil 1">
+                            </a>
+                            <h5 class="tarjeta-titulo">HealthyTrack</h5>
+                            <p class="tarjeta-texto">Monitorea pasos, hidratación y sueño para un estilo de vida saludable.</p>
                         </div>
-                        <div class="tarjeta-cuerpo">
-                            <img src="img/proyecto1.jpg" alt="">
-                            <h5 class="tarjeta-titulo">Proyecto 1</h5>
-                            <p class="tarjeta-texto">Descripción del proyecto 1.</p>
+                        <div class="tarjeta-cuerpo web">
+                            <a href="https://alejathv.github.io/FisioHorizon/">
+                                <img src="img/proyecto-web-1.png" alt="Proyecto Web 1">
+                            </a>
+                            <h5 class="tarjeta-titulo">FisioHorizon</h5>
+                            <p class="tarjeta-texto">Plataforma Web de fisioterapia con ejercicios y seguimiento personalizado para tu recuperación.</p>
                         </div>
                     </div>
+        
                     <div class="col-lg-6 proyectos">
-                        <div class="tarjeta-cuerpo">
-                            <img src="img/proyecto1.jpg" alt="">
-                            <h5 class="tarjeta-titulo">Proyecto 1</h5>
-                            <p class="tarjeta-texto">Descripción del proyecto 1.</p>
+                        <div class="tarjeta-cuerpo movil">
+                            <a href="https://alejathv.github.io/DOM-Alejandra-Saenz/">
+                                <img src="img/proyecto-movil-2.jpg" alt="Proyecto Móvil 2">
+                            </a>
+                            <h5 class="tarjeta-titulo"> Learnify</h5>
+                            <p class="tarjeta-texto">App educativa con lecciones rápidas sobre idiomas y habilidades prácticas.</p>
                         </div>
-                        <div class="tarjeta-cuerpo">
-                            <img src="img/proyecto1.jpg" alt="">
-                            <h5 class="tarjeta-titulo">Proyecto 1</h5>
-                            <p class="tarjeta-texto">Descripción del proyecto 1.</p>
+                        <div class="tarjeta-cuerpo web">
+                            <a href="proyecto-web2.html">
+                                <img src="img/proyecto-web-2.jpg" alt="Proyecto Web 2">
+                            </a>
+                            <h5 class="tarjeta-titulo">EduGloss</h5>
+                            <p class="tarjeta-texto">Plataforma con cursos de manicure, diseño de uñas y tendencias para todos los niveles.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
+
+        
                 
         <section id="estudios">
             <h2>Estudios</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 python">
+                    <div class="col-lg-4 python" data-aos="zoom-out-up" data-aos-duration="1500">
                         <p class="estpython">
                             <b>2023</b> <br>
                             Variables y Estructuras <br>de Control en Python, <br> y
@@ -158,15 +177,15 @@
                             Equipos de Cómputo
                         </p>
                     </div>
-                    <div class="col-lg-4 imagenest">
+                    <div class="col-lg-4 imagenest" data-aos="zoom-out" data-aos-duration="1500">
                         <img src="img/Group 5.svg" alt="">
                     </div>
-                    <div class="col-lg-4 est">
+                    <div class="col-lg-4 est" data-aos="zoom-in-up" data-aos-duration="1500">
                         <p class="est2021">
                             <b>2021-2022</b> <br>
                             Tecnico en Sistemas 
                         </p>
-                        <p class="est3">
+                        <p class="est3" data-aos="zoom-in-up" data-aos-duration="1500">
                             <b>2023-2025</b> <br>
                             Tecnólogo en Análisis y Desarrollo de Software
                         </p>
@@ -174,29 +193,22 @@
                 </div>
             </div>
         </section>
-        <section id="experiencia" data-aos="fade-right">
+        <section id="experiencia" data-aos="fade-right" data-aos-duration="1500">
             <h2>Experiencia</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 info-experiencia">
                         <p>
-                            Soy una desarrolladora web con
-                            experiencia en la creación de aplicaciones y
-                            sitios funcionales y atractivos.
-                            Domino HTML, CSS, JavaScript y frameworks como React y Angular.
-                             Me especializo en ofrecer soluciones eficientes,
-                             escalables y adaptadas a las necesidades del cliente,
-                             con un enfoque en el rendimiento y la colaboración
-                             en equipo para garantizar el éxito de los proyectos.
+                            Soy una desarrolladora web con experiencia en la creación de aplicaciones y sitios funcionales y atractivos. Domino HTML, CSS, JavaScript y el framework Bootstrap. Me especializo en ofrecer soluciones eficientes, adaptadas a las necesidades del cliente, con un enfoque en el diseño responsivo y la experiencia de usuario.
                         </p>
                     </div>
                     <div class="col-lg-6 icon-experiencia">
-                        <i class="fa-solid fa-scroll"></i>
+                        <img src="img/undraw_static_assets_rpm6.svg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section id="pasatiempos">
+        <section id="pasatiempos" data-aos="fade-left" data-aos-duration="1500">
             <h2>Pasatiempos</h2>
             <div class="container">
                 <div class="row">
