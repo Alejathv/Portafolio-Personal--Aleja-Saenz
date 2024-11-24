@@ -165,22 +165,37 @@ header {
 }
 
 /* -------------------------------------------------------------- */
-
-#portafolio{
+#portafolio {
     width: 100%;
     height: 100vh;
-    display: flex;
 }
-#portafolio img{
+
+#portafolio .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portafolio .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#portafolio img {
     width: 380px;
     height: 300px;
 }
-#portafolio h2{
+
+#portafolio h2 {
     font-size: 60px;
     text-align: center;
     color: var(--primary-color);
     margin: 50px 0 50px 0;
+    width: 100%;
 }
+
 #portafolio h2::after {
     content: "";
     display: block;
@@ -189,9 +204,32 @@ header {
     background-color: var(--secondary-color);
     margin: 5px auto 20px;
 }
-#portafolio .tarjeta-cuerpo {
-    margin-bottom: 70px;
 
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Espacio entre tarjetas */
+}
+
+.tarjeta-cuerpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    /* Opcional: agregar un borde o sombra para mejor visualización */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.tarjeta-titulo {
+    margin: 15px 0 10px 0;
+}
+
+.tarjeta-texto {
+    margin: 0;
 }
 
 /* --------------------------------------------------------------------------- */
@@ -249,6 +287,7 @@ header {
     font-size: 60px;
     text-align: center;
     color: var(--primary-color);
+    margin-bottom: 60px;
 }
 #experiencia  h2::after {
     content: "";
@@ -260,7 +299,7 @@ header {
 }
 .info-experiencia p{
     font-size: 30px;
-    text-align: center;
+    text-align: left;
 }
 .icon-experiencia i{
     font-size: 400px;
@@ -273,7 +312,8 @@ header {
 /* --------------------------------------------------------------------------------------------- */
 #pasatiempos{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
+
 }
 #pasatiempos h2{
     font-size: 50px;
@@ -291,23 +331,115 @@ header {
 }
 .info-pasatiempo p{
     font-size: 30px;
-    text-align: center;
+    text-align: right;
+}
+.imagen-pasatiempo img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
 }
 
 
 /* ----------------------------------------------------------------------------------------------- */
-#contacto h2{
-    font-size: 50px;
-    text-align: center;
-    color: var(--primary-color);
-    margin: 50px 0 50px 0;
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #7BC9FF;
 }
-#contacto  h2::after {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 3px;
+.contacto{
+    position: relative;
+}
+
+  
+  /* Parte superior del footer */
+.footer-top {
     background-color: var(--secondary-color);
-    margin: 5px auto 20px;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 100px;
+    position: absolute;
+    top: -50px;
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en una fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-evenly; /* Espacio entre los elementos */
+    gap: 10px;
+    border-radius: 30px;
+    
 }
+  
+.footer-top h2 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.footer-top p {
+    margin: 10px 0;
+    font-size: 30px;
+}
+  
+.footer-top button {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+.footer-top button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+  
+  /* Parte inferior del footer */
+.footer-bottom {
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 120px 10px;
+}
+  
+.footer-bottom p {
+    margin: 10px 0 10px;
+    font-size: 25px;
+}
+  
+  /* Enlaces sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.redes-sociales a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+  
+.redes-sociales a:hover {
+    color: var(--four-color);
+}
+.redes-sociales i{
+    font-size: 50px;
+}
+
+.contacto::before {
+    content: "\f109"; /* Código del icono FontAwesome (ejemplo: ícono de hogar) */
+    font-family: 'FontAwesome'; /* Asegúrate de haber cargado FontAwesome */
+    font-size: 40px;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    transform:rotate(-45deg);
+    z-index: 10;
+  }
 
