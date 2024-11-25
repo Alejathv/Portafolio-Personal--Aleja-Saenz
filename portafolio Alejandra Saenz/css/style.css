@@ -588,38 +588,146 @@ footer{
     }
 
     .icon-hero img {
-        width: 400px;
-        height: 400px;
-        right: 150px;
+        width: 250px;
+        height: 250px;
+        right: 100px;
+        top: 500px;
+    }
+
+    .contenido-hero h2 {
+        font-size: 50px;
+        margin-top: 150px;
+        position: relative;
+        left: 20px;
+    }
+
+    .contenido-hero h1 {
+        font-size: 30px;
+        position: relative;
+        top: 250px;
+        left: 20px;
+    }
+
+    .icon-hero img {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+        position: relative;
+        right: auto;
+    }
+
+    /* Sobre Mi */
+    #sobre-mi {
+        height: auto;
+        padding: 20px 0;
     }
 
     #sobre-mi p {
+        font-size: 25px;
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    /* Habilidades */
+    #habilidades {
+        height: auto;
+    }
+
+    #habilidades p {
+        font-size: 25px;
+    }
+
+    .hab {
+        padding: 20px;
+    }
+
+    /* Estudios */
+    #estudios {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .est {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .estpython {
+        text-align: center;
+    }
+
+    .est2021 {
+        margin-bottom: 50px;
+    }
+
+    /* Experiencia */
+    #experiencia {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .icon-experiencia img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        position: relative;
+        right: auto;
+        top: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    /* Pasatiempos */
+    #pasatiempos {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .imagen-pasatiempo img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        position: relative;
+        margin: 20px auto;
+        display: block;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-top h2 {
         font-size: 30px;
+    }
+
+    .footer-top p {
+        font-size: 25px;
+    }
+}
+
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .icon-hero img {
+        width: 400px;
+        height: 400px;
+        right: 100px;
     }
 
     .icon-experiencia img {
         width: 500px;
         height: 500px;
-        right: 150px;
+        right: 90px;
     }
 
-    .imagen-pasatiempo img {
-        width: 500px;
-        height: 350px;
+    .est{
+        right: 300px;
     }
-}
-
-/* Media Queries para pantallas más grandes */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .icon-hero img {
-        width: 450px;
-        height: 450px;
-        right: 200px;
-    }
-
-    .icon-experiencia img {
-        width: 550px;
-        height: 550px;
-        right: 200px;
+    #sobre-mi{
+        margin-bottom: 50px;
     }
 }
