@@ -27,9 +27,15 @@ header {
     background-size: cover;
     background-position: center;
 }
-button .navbar-toggler{
-    color: var(--secondary-color);
-    border: var(--secondary-color);
+.navbar-toggler {
+    border: 2px solid var(--secondary-color); /* Color y ancho del borde */
+    border-radius: 8px;         /* Bordes redondeados */
+    background-color: #FFF;     /* Fondo blanco */
+}
+
+.navbar-toggler:hover {
+    background-color: var(--secondary-color); /* Fondo al pasar el cursor */
+    border-color: #FFF;         /* Borde al pasar el cursor */
 }
 #hero {
     width: 100%;
@@ -43,7 +49,39 @@ button .navbar-toggler{
 .nav-item a {
     color: #FFF;
     margin: 0 20px 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+.nav-item a {
+    color: #FFF; /* Color normal del enlace */
+    text-decoration: none; /* Sin subrayado */
+    position: relative; /* Necesario para la línea debajo */
+    display: inline-block; /* Para que el enlace se ajuste al tamaño del contenido */
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza las transiciones */
+}
+
+.nav-item a:hover {
+    color: var(--secondary-color); /* Cambia el color en hover */
+    transform: scale(1.1); /* Aplica un efecto de zoom */
+}
+
+/* Línea debajo */
+.nav-item a::after {
+    content: ''; /* Crea un elemento vacío */
+    position: absolute;
+    bottom: 0; /* Coloca la línea en la parte inferior */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Altura de la línea */
+    background-color: var(--secondary-color); /* Color de la línea */
+    transform: scaleX(0); /* Comienza invisible */
+    transition: transform 0.3s ease; /* Suaviza la transición de la línea */
+}
+
+.nav-item a:hover::after {
+    transform: scaleX(1); /* La línea aparece cuando se pasa el cursor */
+}
+
+
 
 .contenido-hero h2 {
     font-size: 100px;
@@ -113,8 +151,15 @@ button .navbar-toggler{
 }
 
 .social-icons a {
-    text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Color inicial */
+    font-size: 45px; /* Tamaño del icono */
+    transition: transform 0.3s ease, color 0.3s ease; 
+    text-decoration: none;/* Suaviza los cambios */
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color); /* Color al pasar el cursor */
+    transform: translateY(-5px); /* Mueve el icono hacia arriba */
 }
 #sobre-mi i{
     margin-right: 15px;
@@ -424,6 +469,14 @@ footer{
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+.footer-top a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.footer-top a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
   
   /* Parte inferior del footer */
 .footer-bottom {
@@ -440,6 +493,7 @@ footer{
     font-size: 25px;
     color: #7BC9FF;
 }
+
   
   /* Enlaces sociales */
 .redes-sociales {
